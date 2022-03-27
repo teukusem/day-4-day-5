@@ -1,0 +1,165 @@
+form {
+  width: 100%;
+  margin: 50px auto;
+  display: inline-grid;
+  justify-content: center;
+}
+.add-h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.project-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input.input-text {
+  background-color: white;
+  box-shadow: 2px 2px 8px #8888884f;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(209, 207, 207);
+}
+
+.date {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.area-desc {
+  background-color: white;
+  box-shadow: 2px 2px 8px #8888884f;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(209, 207, 207);
+  height: 100px;
+  resize: none;
+}
+
+.left-tech {
+  width: 100%;
+  padding-left: 50px;
+}
+
+.right-tech {
+  width: 100%;
+}
+
+.checkbox-logo {
+  font-size: 14px;
+  color: black;
+}
+
+.upload-img {
+  margin-top: 5px;
+  height: 37px;
+  width: 100%;
+  border: 1px solid rgb(209, 207, 207);
+  background-color: white;
+  box-shadow: 2px 2px 8px #8888884f;
+  border-radius: 5px;
+}
+
+.label-imgfile {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 37px;
+}
+
+.input-file-img {
+  background-color: white;
+  box-shadow: 2px 2px 8px #8888884f;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(209, 207, 207);
+}
+
+.btn-submit-blog {
+  background-color: rgb(23, 23, 54);
+  color: white;
+  margin-top: 10px;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.page-form {
+  background-color: white;
+  height: auto;
+  width: 100%;
+}
+
+.card-list {
+  padding: 15px 150px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-card {
+  border: 2px solid rgb(180, 180, 180);
+  height: auto;
+  width: 250px;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 10px;
+}
+
+.judul {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn-page {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn-page-bottom {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 5px 35px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.icon-page {
+  text-align: center;
+}
+
+.img-page-bottom {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.duration-time {
+  color: black;
+  font-size: 10px;
+  margin-top: -5px;
+}
+
+.type-page {
+  color: gray;
+  font-size: 10px;
+  margin-top: -10px;
+}
+
+.slice-text {
+  text-align: justify;
+  font-size: 12px;
+  padding: 3px;
+  height: 90px;
+}

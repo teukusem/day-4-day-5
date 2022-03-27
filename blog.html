@@ -1,0 +1,158 @@
+<html>
+  <head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="blog.css">
+    <script src="blog-submit.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="assets/dumbways.png" alt="dumbways.logo" />
+
+        <ul>
+          <li>
+            <a href="index.html" class="home-active"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="blog.html" class="my-active"  style="font-weight: bold">My Project</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+
+
+    <div class="blog-form" style="height: 110vh;">
+     <!-- <button onclick="dataSiswa()">tambah</button> -->
+      <form onsubmit="blog(event)">
+        <h2 class="add-h2">ADD MY PROJECT</h2>
+        <div>
+            <label class="Project-name" for="Project-name"
+              >Project Name</label
+            >
+            <input
+              type="text"
+              id="Project-name"
+              placeholder="Input Your Name Project"
+              class="input-text"
+              
+            />
+          </div>
+          
+          <!-- =============date============ -->
+
+          <div style="display: flex; margin-top: 20px;">
+
+              <label style="display: flex;gap: 20px; ">
+
+                <label for="start-date"  class="date">
+                  Start Date
+                  <input 
+                  type="date" 
+                  id="start-date"
+                  class="input-text"
+                  />
+                </label>
+              
+                <label for="end-date" class="date">
+                  End Date
+                  <input 
+                  type="date"
+                   id="end-date" 
+                   class="input-text" 
+                 />
+                </label>
+              </label>
+              
+          </div>
+        <div style="margin-top: 20px;">
+          <label for="description" class="date">
+            Description
+            <textarea id="description" placeholder="Input Description" class="area-desc"></textarea>
+          </label>
+        </div>
+        
+        <label style="margin-top: 20px; font-weight: bold; font-size: 20px;">
+            Technologies
+          </label>
+            <div style="display: flex; margin-top: 10px;" > 
+
+              <!-- checkbox -->
+              <div class="left-tech" >
+                <input type="checkbox" id="vue-js" class="checkbox-logo" value="bx bxl-vuejs true"/>
+                <label for="vue-js" >Vue.Js</label><br>
+                 <input type="checkbox" id="react-js" class="checkbox-logo" value="bx bxl-react true" />
+                <label for="react-js">React.js</label>
+              </div>
+
+              <div class="right-tech">
+                  <input type="checkbox" id="node-js" class="checkbox-logo" value="bx bxl-nodejs true" />
+                <label for="node-js" >Node.Js</label><br>
+                 <input type="checkbox" id="javaScript" class="checkbox-logo" value="bx bxl-javascript true"/>
+                <label for="javaScript" >JavaScript</label>
+              </div>
+            </div>
+
+        <div style="margin-top: 20px;">
+            <label for="img-upload" class="date">Upload Image </label>
+                <div for="img-upload" class="upload-img">
+                <label for="img-upload" class="label-imgfile">
+                  <p style="width: 20%; padding-left: 20px; color: gray;">Choose </p>
+                  <i class="bx bx-image-add" style="width: 5%; font-weight: bold; font-size: 20px;"></i>
+                </label>
+                <input type="file" id="img-upload" hidden/>               
+            </div>
+          </div>
+          
+          <div style="justify-content:flex-end; display: flex; margin-top: 20px;">
+            <button class="btn-submit-blog">
+            Submit
+          </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- MY PROJECT -->
+    <div class="page-form">
+      <h1 style="text-align: center; padding: 50px 20px; width: 100%;">MY PROJECT</h1>
+      <!-- CARD LIST  -->
+      <div class="card-list" id="card-list" >
+        <!-- ========CARD========== -->
+          <div class="project-card">
+           <img src="assets/laptop.jpg" style="width: 100%; border-radius: 10px;"/>
+           <div>
+            <h4 class="judul">Asus launching a new product</h4>
+            <p class="type-page">Technologies</p>
+            <p class="duration-time">Duration 1 Hours</p>
+           </div>
+           <a href="detail.html" style="cursor: pointer; color:black">
+             <p class="slice-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellat natus alias rem animi dolores, porro possimus vitae libero nam praesentium facere doloribus impedit odit nemo omnis laudantium saepe quisquam .....</p>
+           </a>
+           <!-- icon checkbox -->
+           <div class="icon-page">
+             <i class='bx bxl-vuejs true' ></i>
+             <i class='bx bxl-react true' ></i>
+             <i class='bx bxl-nodejs true' ></i>
+             <i class='bx bxl-javascript true' ></i>
+             
+              <div class="btn-page">
+                <button class="btn-page-bottom">edit</button>
+              <button class="btn-page-bottom">delete</button>
+              </div>
+           </div>
+         </div> 
+
+         
+          </div>
+        </div> 
+      </div>
+  </body>
+</html>
